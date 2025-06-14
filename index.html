@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="assets/css/style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <link href="https://cdn.jsdelivr.net/npm/@ionic/core/css/ionicons.css" rel="stylesheet">
+
+  <title>Portfolio</title>
+</head>
+<body>
+  <main>
+    <div class="side-bar">
+      <div class="avatar-box">
+          <img src="assets/images/my-avatar.png" alt="Althaf Ahamed" height="125" width="125">
+      </div>
+
+      <div class="author-info">
+        <h1 class="author-name">Althaf Ahamed</h1>
+        <p class="author-title">Web Developer</p>
+      </div>
+
+      <div class="personal-info">
+        <ul class="info-item-list">
+          <li class="info-item">
+            <div class="info-icon">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+            <div class="info-item-detail">
+              <p class="info-title">EMAIL</p>
+              <a href="mailto:althafahmed47@gmail.com" class="info-link email">althafahamed47@gmail.com</a>
+            </div>
+          </li>
+
+          <li class="info-item">
+            <div class="info-icon">
+              <ion-icon name="phone-portrait-outline"></ion-icon>
+            </div>
+            <div class="info-item-detail">
+              <p class="info-title">PHONE</p>
+              <a href="tel:+918848851328" class="info-link">+91 88488 51328</a>
+            </div>
+          </li>
+
+          <li class="info-item">
+            <div class="info-icon">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+            <div class="info-item-detail">
+              <p class="info-title">ADDRESS</p>
+              <address>Kasaragod, Kerala, India</address>
+            </div>
+          </li>
+        </ul>
+
+        <ul class="social-list">
+          <li class="social-item">
+            <a href="#" class="social-link">
+              <ion-icon name="logo-facebook" class="logo-facebook"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="#" class="social-link">
+              <ion-icon name="logo-instagram" class="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="#" class="social-link">
+              <ion-icon name="logo-linkedin" class="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="main-content">
+      <nav class="nav-bar">
+        <ul class="nav-bar-list">
+          <li class="nav-bar-item">
+            <button value="#about" class="nav-bar-link active">About</button>
+          </li>
+
+          <li class="nav-bar-item">
+            <button value="#resume" class="nav-bar-link">Resume</button>
+          </li>
+
+          <li class="nav-bar-item">
+            <button value="#portfolio" class="nav-bar-link">Portfolio</button>
+          </li>
+
+          <li class="nav-bar-item">
+            <button value="#contact" class="nav-bar-link">Contact</button>
+          </li>
+        </ul>
+      </nav>
+
+      <div id="about">
+        <h2 class="page-title">About Me</h2>
+
+        <section class="about-text">
+          <p>
+            I'm Creative Director and UI/UX Designer from Kerala, India, working in web development and print media.<br>
+            I enjoy turning complex problems into simple, beautiful and intuitive designs.
+          </p>
+
+          <p>
+            My job is to build your website so that it is functional and user-friendly but at the same time attractive. 
+            Moreover, I add personal touch to your product and make sure that is eye-catching and easy to use. 
+            My aim is to bring across your message and identity in the most creative way. 
+            I created web design for many famous brand companies.
+          </p>
+        </section>
+
+        <section class="service">
+          <h2 class="service-title">What I'm Doing</h2>
+          <div class="service-grid">
+            <div class="service-item-box">
+              <div class="service-item-icon">
+                <img src="assets/images/icon-design.svg" alt="design icon" width="40">
+              </div>
+
+              <div class="service-item-detail">
+                <p class="service-item-title">
+                  Web Design
+                </p>
+
+                <p class="service-item-description">
+                  The most modern and high-quality design made at a professional level.
+                </p>
+              </div>
+            </div>
+
+            <div class="service-item-box">
+              <div class="service-item-icon">
+                <img src="assets/images/icon-dev.svg" alt="development icon" width="40">
+              </div>
+
+              <div class="service-item-detail">
+                <p class="service-item-title">
+                  Web Development
+                </p>
+
+                <p class="service-item-description">
+                  High-quality development of sites at the professional level.
+                </p>
+              </div>
+            </div>
+
+            <div class="service-item-box">
+              <div class="service-item-icon">
+                <img src="assets/images/icon-photo.svg" alt="photography icon" width="40">
+              </div>
+
+              <div class="service-item-detail">
+                <p class="service-item-title">
+                  Photography
+                </p>
+
+                <p class="service-item-description">
+                  I make high-quality photos of any category at a professional level.
+                </p>
+              </div>
+            </div>
+
+            <div class="service-item-box">
+              <div class="service-item-icon">
+                <img src="assets/images/icon-app.svg" alt="app icon" width="40">
+              </div>
+
+              <div class="service-item-detail">
+                <p class="service-item-title">
+                  Mobile Apps
+                </p>
+
+                <p class="service-item-description">
+                  Professional development of applications for iOS and Android.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <div id="resume" class="hidden">
+        <h2 class="page-title">Resume</h2>
+
+        <section class="timeline">
+          <div class="timeline-title-wrapper">
+            <div class="timeline-icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="timeline-title">
+              Education
+            </h3>
+          </div>
+
+          <ul class="timeline-list">
+            <li class="timeline-item">
+              <h4 class="timeline-item-title">
+                Wadihuda Institute of Research & Advanced Studies
+              </h4>
+
+              <span>2022 - 2025</span>
+
+              <p class="timeline-item-text">
+                Nemo enims ipsam voluptatem, blanditiis praesentium voluptum delenit atque corrupti, quos dolores et
+                quas molestias
+                exceptur.
+              </p>
+            </li>
+
+            <li class="timeline-item">
+              <h4 class="timeline-item-title">
+                S A B T M Higher Secondary School
+              </h4>
+
+              <span>2019 - 2021</span>
+
+              <p class="timeline-item-text">
+                Nemo enims ipsam voluptatem, blanditiis praesentium voluptum delenit atque corrupti, quos dolores et
+                quas molestias
+                exceptur.
+              </p>
+            </li>
+          </ul>
+
+          <div class="timeline-title-wrapper">
+            <div class="timeline-icon-box">
+              <ion-icon name="bookmark-outline"></ion-icon>
+            </div>
+
+            <h3 class="timeline-title">
+              Experience
+            </h3>
+          </div>
+
+          <ul class="timeline-list">
+            <li class="timeline-item">
+              <h4 class="timeline-item-title">
+                Wadihuda Institute of Research & Advanced Studies
+              </h4>
+
+              <span>2022 - 2025</span>
+
+              <p class="timeline-item-text">
+                Nemo enims ipsam voluptatem, blanditiis praesentium voluptum delenit atque corrupti, quos dolores et
+                quas molestias
+                exceptur.
+              </p>
+            </li>
+
+            <li class="timeline-item">
+              <h4 class="timeline-item-title">
+                S A B T M Higher Secondary School
+              </h4>
+
+              <span>2019 - 2021</span>
+
+              <p class="timeline-item-text">
+                Nemo enims ipsam voluptatem, blanditiis praesentium voluptum delenit atque corrupti, quos dolores et
+                quas molestias
+                exceptur.
+              </p>
+            </li>
+          </ul>
+        </section>
+      </div>
+
+      <div id="portfolio" class="hidden">
+        <h2 class="page-title">Portfolio</h2>
+
+        <section class="portfolio-grid">
+          <div class="project-container">
+            <div class="project-image">
+              <div class="project-image-overlay">
+                <ion-icon name="eye-outline"></ion-icon>
+              </div>
+
+              <img src="assets/images/blog-1.jpg">
+            </div>
+
+            <div class="project-detail">
+              <h4 class="project-title">
+                Job Localee
+              </h4>
+
+              <p class="project-text">
+                Application
+              </p>
+            </div>
+          </div>
+
+          <div class="project-container">
+            <div class="project-image">
+              <div class="project-image-overlay">
+                <ion-icon name="eye-outline"></ion-icon>
+              </div>
+
+              <img src="assets/images/blog-2.jpg">
+            </div>
+
+            <div class="project-detail">
+              <h4 class="project-title">
+                Certify
+              </h4>
+
+              <p class="project-text">
+                Web Application
+              </p>
+            </div>
+          </div>
+
+          <div class="project-container">
+            <div class="project-image">
+              <div class="project-image-overlay">
+                <ion-icon name="eye-outline"></ion-icon>
+              </div>
+
+              <img src="assets/images/blog-3.jpg">
+            </div>
+
+            <div class="project-detail">
+              <h4 class="project-title">
+                Play Well
+              </h4>
+
+              <p class="project-text">
+                Application
+              </p>
+            </div>
+          </div>
+
+          <div class="project-container">
+            <div class="project-image">
+              <div class="project-image-overlay">
+                <ion-icon name="eye-outline"></ion-icon>
+              </div>
+
+              <img src="assets/images/blog-4.jpg" width="250px">
+            </div>
+
+            <div class="project-detail">
+              <h4 class="project-title">
+                Smart City
+              </h4>
+
+              <p class="project-text">
+                Application
+              </p>
+            </div>
+          </div>
+          
+          <div class="project-container">
+            <div class="project-image">
+              <div class="project-image-overlay">
+                <ion-icon name="eye-outline"></ion-icon>
+              </div>
+
+              <img src="assets/images/blog-5.jpg">
+            </div>
+
+            <div class="project-detail">
+              <h4 class="project-title">
+                Fit-bit
+              </h4>
+
+              <p class="project-text">
+                Application
+              </p>
+            </div>
+          </div>
+
+          <div class="project-container">
+            <div class="project-image">
+              <div class="project-image-overlay">
+                <ion-icon name="eye-outline"></ion-icon>
+              </div>
+
+              <img src="assets/images/blog-6.jpg">
+            </div>
+
+            <div class="project-detail">
+              <h4 class="project-title">
+                Canteen
+              </h4>
+
+              <p class="project-text">
+                Application
+              </p>
+            </div>
+          </div>
+          
+          <div class="project-container">
+            <div class="project-image">
+              <div class="project-image-overlay">
+                <ion-icon name="eye-outline"></ion-icon>
+              </div>
+
+              <img src="assets/images/blog-1.jpg">
+            </div>
+
+            <div class="project-detail">
+              <h4 class="project-title">
+                Job Localee
+              </h4>
+
+              <p class="project-text">
+                Application
+              </p>
+            </div>
+          </div>
+
+          <div class="project-container">
+            <div class="project-image">
+              <div class="project-image-overlay">
+                <ion-icon name="eye-outline"></ion-icon>
+              </div>
+
+              <img src="assets/images/blog-2.jpg">
+            </div>
+
+            <div class="project-detail">
+              <h4 class="project-title">
+                Certify
+              </h4>
+
+              <p class="project-text">
+                Web Application
+              </p>
+            </div>
+          </div>
+
+          <div class="project-container">
+            <div class="project-image">
+              <div class="project-image-overlay">
+                <ion-icon name="eye-outline"></ion-icon>
+              </div>
+
+              <img src="assets/images/blog-3.jpg">
+            </div>
+
+            <div class="project-detail">
+              <h4 class="project-title">
+                Play Well
+              </h4>
+
+              <p class="project-text">
+                Application
+              </p>
+            </div>
+          </div>
+
+          <div class="project-container">
+            <div class="project-image">
+              <div class="project-image-overlay">
+                <ion-icon name="eye-outline"></ion-icon>
+              </div>
+
+              <img src="assets/images/blog-4.jpg" width="250px">
+            </div>
+
+            <div class="project-detail">
+              <h4 class="project-title">
+                Smart City
+              </h4>
+
+              <p class="project-text">
+                Application
+              </p>
+            </div>
+          </div>
+          
+          <div class="project-container">
+            <div class="project-image">
+              <div class="project-image-overlay">
+                <ion-icon name="eye-outline"></ion-icon>
+              </div>
+
+              <img src="assets/images/blog-5.jpg">
+            </div>
+
+            <div class="project-detail">
+              <h4 class="project-title">
+                Fit-bit
+              </h4>
+
+              <p class="project-text">
+                Application
+              </p>
+            </div>
+          </div>
+
+          <div class="project-container">
+            <div class="project-image">
+              <div class="project-image-overlay">
+                <ion-icon name="eye-outline"></ion-icon>
+              </div>
+
+              <img src="assets/images/blog-6.jpg">
+            </div>
+
+            <div class="project-detail">
+              <h4 class="project-title">
+                Canteen
+              </h4>
+
+              <p class="project-text">
+                Application
+              </p>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <div id="contact" class="hidden">
+        <h2 class="page-title">Contact</h2>
+      </div>
+    </div>
+  </main>
+
+  <script src="assets/js/script.js"></script>
+
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
