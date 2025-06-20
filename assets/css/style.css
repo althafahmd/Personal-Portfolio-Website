@@ -303,6 +303,11 @@ address {
   padding: 30px;
 }
 
+#portfolio a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+
 .about-text p {
   margin: 0px 0px 16px 0px;
   font-size: 15px;
@@ -527,3 +532,5 @@ address {
   color: rgb(200, 200, 200);
   font-size: 14px;
 }
+
+
