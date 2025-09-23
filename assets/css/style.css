@@ -55,6 +55,7 @@ address {
   display: flex;
   flex-direction: column;
   width: 300px;
+  row-gap: 50px;
   box-sizing: border-box;
   align-items: center;
   justify-content: center;
@@ -82,23 +83,33 @@ address {
   position: relative;
 }
 
+.content-info {
+  display: block;
+}
+
 .author-info {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 0px 0px 50px 0px;
+  justify-content: flex-start;
+  row-gap: 25px;
+  margin: 0px;
   padding: 0px;
 }
 
 .author-name {
-  margin-bottom: 0px;
+  margin: 0px 0px 15px 0px;
+  align-self: center;
+  display: block;
+  text-align: center;
+  box-sizing: border-box;
   font-size: 26px;
 }
 
 .author-title {
   font-size: 12px;
   font-weight: 500;
-  margin-top: 14px;
+  margin: 0px 40px;
   color: rgb(255, 190, 75);
   background-color: rgb(43, 43, 44);
   border-radius: 20px;
@@ -199,12 +210,18 @@ address {
 .avatar-box {
   width: 150px;
   height: 150px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: block;
   background-color: rgb(55, 55, 55);
   border: 0.8px solid rgb(70, 70, 70);
   border-radius: 30px;
+}
+
+.avatar-box img {
+  display: block;
+  box-sizing: border-box;
+  width: 150px;
+  justify-self: center;
+
 }
 
 .nav-bar-list {
