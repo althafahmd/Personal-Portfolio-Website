@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap");
+
 /* * {
   outline: 1px solid red;
 } */
@@ -11,6 +13,8 @@
 *,
 *::before,
 *::after {
+	margin: 0;
+	padding: 0;
 	box-sizing: border-box;
 }
 
@@ -31,7 +35,7 @@
 
 body {
 	background-color: rgb(18, 18, 18);
-	font-family: Poppins, Arial, Helvetica;
+	font-family: "Montserrat", Arial;
 	color: rgb(255, 255, 255);
 }
 
@@ -112,17 +116,18 @@ address {
 	text-align: center;
 	box-sizing: border-box;
 	font-size: 26px;
+	font-weight: 600;
 }
 
 .author-title {
 	font-size: 12px;
 	font-weight: 500;
-	margin: 0px 40px;
 	color: rgb(255, 190, 75);
 	background-color: rgb(43, 43, 44);
 	border-radius: 20px;
-	padding: 5px 18px;
-	margin-bottom: 0px;
+	padding: 0.3rem 0.7rem;
+	margin: 0 auto;
+	max-width: fit-content;
 }
 
 .info-item-list {
@@ -216,19 +221,19 @@ address {
 }
 
 .avatar-box {
-	width: 150px;
-	height: 150px;
-	display: block;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: max-content;
 	background-color: rgb(55, 55, 55);
 	border: 0.8px solid rgb(70, 70, 70);
-	border-radius: 30px;
+	border-radius: 1.8rem;
 }
 
 .avatar-box img {
 	display: block;
 	box-sizing: border-box;
 	width: 150px;
-	justify-self: center;
 }
 
 .nav-bar-list {
@@ -267,7 +272,9 @@ address {
 	font-weight: 500;
 	text-decoration: none;
 	cursor: pointer;
-	transition: color 0.25s ease, transform 0.25s ease;
+	transition:
+		color 0.25s ease,
+		transform 0.25s ease;
 }
 
 .nav-bar-link.active {
@@ -353,7 +360,7 @@ address {
 
 .service-grid {
 	display: grid;
-	grid-template-columns: 400px 400px;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 	row-gap: 20px;
 	column-gap: 20px;
 	justify-content: space-evenly;
@@ -371,6 +378,7 @@ address {
 	column-gap: 16px;
 	text-align: left;
 	padding: 30px;
+	flex-wrap: nowrap;
 }
 
 .service-item-detail p {
@@ -519,7 +527,9 @@ address {
 	justify-content: center;
 	z-index: 1;
 	opacity: 0;
-	transition: opacity ease 0.25s, transform ease 0.25s;
+	transition:
+		opacity ease 0.25s,
+		transform ease 0.25s;
 }
 
 .project-container:hover .project-image-overlay {
@@ -530,7 +540,9 @@ address {
 .project-image img {
 	width: 100%;
 	border-radius: 20px;
-	transition: transform ease 0.25s, opacity ease 0.25s;
+	transition:
+		transform ease 0.25s,
+		opacity ease 0.25s;
 }
 
 .project-container:hover img {
@@ -557,4 +569,48 @@ address {
 	margin: 0px;
 	color: rgb(200, 200, 200);
 	font-size: 14px;
+}
+
+@media (max-width: 1280px) {
+	main {
+		flex-direction: column;
+		overflow: hidden;
+		align-items: center;
+		margin: 4rem 1rem;
+		padding: 0;
+	}
+
+	.side-bar {
+		flex-direction: row;
+		width: 80%;
+		max-height: fit-content;
+		margin: 0 auto 2rem;
+		padding: 1.8rem;
+		justify-content: flex-start;
+		z-index: 0;
+		position: static;
+	}
+
+	.main-content {
+		margin: 0;
+		width: 80%;
+		z-index: 0;
+	}
+
+	.author-info {
+		flex-direction: row;
+		gap: 2rem;
+	}
+
+	.avatar-box img {
+		width: 120px;
+	}
+
+	.personal-info {
+		display: none;
+	}
+
+	.author-title {
+		margin: 0;
+	}
 }
